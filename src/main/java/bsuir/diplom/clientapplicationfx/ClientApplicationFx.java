@@ -10,4 +10,5 @@ public class ClientApplicationFx {
     public static void main(String[] args) {
         Application.launch(JavaFxApplication.class, args);
     }
+
 }
