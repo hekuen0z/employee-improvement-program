@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.submenu.ProfileController">
+   <children>
+      <Label layoutX="780.0" layoutY="-3.0" onMouseClicked="#handleClose" text="X" textFill="#f77368" wrapText="true" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="-3.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image_box" blendMode="SRC_ATOP" fitHeight="130.0" fitWidth="133.0" layoutX="32.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/invisible-person-of-clothes.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="14.0" layoutY="178.0" prefHeight="4.0" prefWidth="528.0" />
+      <Separator layoutX="193.0" layoutY="14.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="0.0" />
+      <VBox layoutX="223.0" layoutY="31.0" prefHeight="94.0" prefWidth="94.0">
+         <children>
+            <Label text="Логин:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Пол:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Статус:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="318.0" layoutY="27.0" prefHeight="94.0" prefWidth="175.0">
+         <children>
+            <Label fx:id="login_label" text="Не указано">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="sex_label" text="Не указано">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="sex_label1" text="Не указано">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="186.0" layoutY="198.0" text="Дополнительная информация" />
+      <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="226.0" prefHeight="130.0" prefWidth="167.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="181.0" text="Имя:" />
+            <Label prefHeight="18.0" prefWidth="177.0" text="Фамилия:" />
+            <Label prefHeight="18.0" prefWidth="174.0" text="Отчество:" />
+            <Label prefHeight="18.0" prefWidth="170.0" text="Должность:" />
+            <Label prefHeight="18.0" prefWidth="169.0" text="Отдел:" />
+            <Label prefHeight="18.0" prefWidth="170.0" text="Количество активных дел:" />
+            <Label prefHeight="18.0" prefWidth="178.0" text="Наличие взысканий:" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="375.0" prefHeight="38.0" prefWidth="140.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="151.0" text="Телефон:" />
+            <Label prefHeight="18.0" prefWidth="146.0" text="Соц.сети:" />
+         </children>
+      </VBox>
+      <Label layoutX="244.0" layoutY="357.0" text="Контакты" />
+      <VBox layoutX="318.0" layoutY="226.0" prefHeight="130.0" prefWidth="140.0">
+         <children>
+            <Label fx:id="name_label" prefHeight="17.0" prefWidth="140.0" text="Не указано" />
+            <Label fx:id="surname_label" prefHeight="17.0" prefWidth="141.0" text="Не указано" />
+            <Label fx:id="third_name_label" prefHeight="17.0" prefWidth="148.0" text="Не указано" />
+            <Label fx:id="position_label" prefHeight="17.0" prefWidth="144.0" text="Не указано" />
+            <Label fx:id="start_date" prefHeight="17.0" prefWidth="143.0" text="Не указано" />
+            <Label fx:id="start_date1" prefHeight="6.0" prefWidth="140.0" text="Не указано" />
+            <Label fx:id="start_date2" prefHeight="17.0" prefWidth="143.0" text="Не указано" />
+         </children>
+      </VBox>
+      <VBox layoutX="318.0" layoutY="375.0" prefHeight="38.0" prefWidth="175.0">
+         <children>
+            <Label fx:id="phone_label" prefHeight="17.0" prefWidth="179.0" text="Не указано" />
+            <Label fx:id="social_label" prefHeight="17.0" prefWidth="177.0" text="Не указано" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="510.0" layoutY="146.0" onMouseClicked="#iconHandler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/edit.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

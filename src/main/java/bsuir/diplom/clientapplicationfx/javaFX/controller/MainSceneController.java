@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 
 @Component
 @RequiredArgsConstructor
-@FxmlView("/fxml/main-scene.fxml")
+@FxmlView("/fxml/SingInScene.fxml")
 public class MainSceneController {
 
     private MainSceneService mainSceneService;

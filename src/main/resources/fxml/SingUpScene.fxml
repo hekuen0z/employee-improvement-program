@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="635.0" prefWidth="701.0" style="-fx-background-color: #F4F4F6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.SingUpController">
+    <children>
+        <AnchorPane prefHeight="635.0" prefWidth="701.0" style="-fx-background-color: #000501;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="701.0" text="Регистрация" textAlignment="CENTER" textFill="WHITE">
+                      <font>
+                          <Font name="System Bold Italic" size="25.0" />
+                      </font>
+                  </Label>
+                <TextField fx:id="login_field" alignment="TOP_CENTER" layoutX="52.0" layoutY="88.0" prefHeight="35.0" prefWidth="270.0" promptText="Имя пользователя" style="-fx-background-radius: 30;">
+                    <font>
+                        <Font name="Comic Sans MS" size="17.0" />
+                    </font>
+                </TextField>
+                <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="60.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/add-user.png" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="password_field" alignment="TOP_CENTER" layoutX="50.0" layoutY="199.0" prefHeight="35.0" prefWidth="270.0" promptText="пароль" style="-fx-background-radius: 30;">
+                    <font>
+                        <Font name="Comic Sans MS" size="17.0" />
+                    </font>
+                </PasswordField>
+            <Separator layoutX="40.0" layoutY="64.0" prefHeight="10.0" prefWidth="614.0" />
+            <Separator layoutX="40.0" layoutY="538.0" prefHeight="10.0" prefWidth="614.0" />
+            <PasswordField fx:id="confirm_password_field" alignment="TOP_CENTER" layoutX="51.0" layoutY="253.0" prefHeight="35.0" prefWidth="270.0" promptText="подтвердите пароль" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </PasswordField>
+                <Button fx:id="registrationButton" layoutX="163.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #EB6E63;" stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css" text="Зарегистрироваться">
+                    <font>
+                        <Font name="Consolas Italic" size="16.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="email_field" alignment="TOP_CENTER" layoutX="51.0" layoutY="143.0" prefHeight="35.0" prefWidth="270.0" promptText="email" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="60.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="60.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="60.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/password.png" />
+               </image>
+            </ImageView>
+              <Label layoutX="671.0" layoutY="4.0" onMouseClicked="#handleClose" text="X" textFill="#f77368" wrapText="true">
+                  <font>
+                      <Font size="26.0" />
+                  </font>
+              </Label>
+            <Button fx:id="returnButton" layoutX="407.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #EB6E63;" stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css" text="Назад">
+               <font>
+                  <Font name="Consolas Italic" size="16.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="boxMale" layoutX="107.0" layoutY="497.0" mnemonicParsing="false" text="Мужской" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="sexGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="boxFemale" layoutX="202.0" layoutY="497.0" mnemonicParsing="false" text="Женский" textFill="WHITE" toggleGroup="$sexGroup">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="warning_label" alignment="CENTER" layoutX="128.0" layoutY="335.0" text="Заполните все поля." textFill="#d4b1b1" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_field1" alignment="TOP_CENTER" layoutX="371.0" layoutY="88.0" prefHeight="35.0" prefWidth="270.0" promptText="Имя" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field11" alignment="TOP_CENTER" layoutX="371.0" layoutY="143.0" prefHeight="35.0" prefWidth="270.0" promptText="Фамилия" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field111" alignment="TOP_CENTER" layoutX="371.0" layoutY="199.0" prefHeight="35.0" prefWidth="270.0" promptText="Отчество" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field112" alignment="TOP_CENTER" layoutX="371.0" layoutY="253.0" prefHeight="35.0" prefWidth="270.0" promptText="Телефон" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field1121" alignment="TOP_CENTER" layoutX="50.0" layoutY="344.0" prefHeight="35.0" prefWidth="592.0" promptText="Должность" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field11211" alignment="TOP_CENTER" layoutX="50.0" layoutY="400.0" prefHeight="35.0" prefWidth="592.0" promptText="Название отдела" style="-fx-background-radius: 30;">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="167.0" layoutY="458.0" text="Пол" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="458.0" text="Привелегии" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="418.0" layoutY="497.0" mnemonicParsing="false" text="Начальник" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="523.0" layoutY="497.0" mnemonicParsing="false" text="Офицер" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
