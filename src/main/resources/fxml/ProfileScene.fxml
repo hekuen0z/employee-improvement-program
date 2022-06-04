@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.submenu.ProfileController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.diplom.clientapplicationfx.javaFX.controller.ProfileController">
    <children>
       <Label layoutX="780.0" layoutY="-3.0" onMouseClicked="#handleClose" text="X" textFill="#f77368" wrapText="true" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="-3.0">
          <font>
@@ -18,7 +18,7 @@
       </Label>
       <ImageView fx:id="image_box" blendMode="SRC_ATOP" fitHeight="130.0" fitWidth="133.0" layoutX="32.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/invisible-person-of-clothes.png" />
+            <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/undefined-avatar.png" />
          </image>
       </ImageView>
       <Separator layoutX="14.0" layoutY="178.0" prefHeight="4.0" prefWidth="528.0" />

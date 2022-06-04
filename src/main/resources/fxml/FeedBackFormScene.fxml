@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.submenu.FeedbackController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.diplom.clientapplicationfx.javaFX.controller.FeedBackFormController">
    <children>
       <Label layoutX="780.0" layoutY="-3.0" onMouseClicked="#handleClose" text="X" textFill="#f77368" wrapText="true" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="-3.0">
          <font>

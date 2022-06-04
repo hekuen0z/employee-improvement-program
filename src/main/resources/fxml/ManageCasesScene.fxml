@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1031.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.submenu.ManagementAccountantController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1031.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.diplom.clientapplicationfx.javaFX.controller.ManageCasesController">
     <children>
         <TabPane layoutX="4.0" layoutY="26.0" prefHeight="386.0" prefWidth="830.0" stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/stylesheet.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
             <tabs>

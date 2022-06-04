@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="225.0" prefWidth="400.0" style="-fx-background-color: #E6E4EF; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.app.controllers.others.LoadingController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="225.0" prefWidth="400.0" style="-fx-background-color: #E6E4EF; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.diplom.clientapplicationfx.javaFX.controller.LoadingController">
    <children>
       <ImageView fitHeight="232.0" fitWidth="400.0" layoutX="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>

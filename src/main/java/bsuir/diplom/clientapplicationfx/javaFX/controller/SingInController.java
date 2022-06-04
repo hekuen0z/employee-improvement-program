@@ -1,34 +1,37 @@
 package bsuir.diplom.clientapplicationfx.javaFX.controller;
 
-import bsuir.diplom.clientapplicationfx.javaFX.service.MainSceneService;
+import bsuir.diplom.clientapplicationfx.javaFX.service.SingInService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import lombok.RequiredArgsConstructor;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Component;
 
-import javax.validation.constraints.NotNull;
-
 
 @Component
 @RequiredArgsConstructor
 @FxmlView("/fxml/SingInScene.fxml")
-public class MainSceneController {
+public class SingInController {
 
-    private MainSceneService mainSceneService;
+    private SingInService singInService;
 
     @Autowired
-    public MainSceneController(MainSceneService mainSceneService) {
-        this.mainSceneService = mainSceneService;
+    public SingInController(SingInService singInService) {
+        this.singInService = singInService;
     }
 
     @FXML
     private Label label;
 
     public void loadHelloMessage(ActionEvent actionEvent){
-        this.label.setText(mainSceneService.getHelloMessage());
+        this.label.setText(singInService.getHelloMessage());
+    }
+
+    public void handleClose(MouseEvent mouseEvent) {
+
     }
 }
