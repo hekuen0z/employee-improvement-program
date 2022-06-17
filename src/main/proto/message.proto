@@ -35,12 +35,16 @@ enum CommandType {
   UPLOAD_DATA = 5;
   SEND_MESSAGE = 6;
 
+  EXIT = 7;
+
   AUTH_BACK = 12;
   LOGOUT_BACK = 13;
 
   DOWNLOAD_DATA_BACK = 14;
   UPLOAD_DATA_BACK = 15;
   SEND_MESSAGE_BACK = 16;
+
+  EXIT_BACK = 17;
 }
 
 message AuthRequest {

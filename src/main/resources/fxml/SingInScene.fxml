@@ -24,7 +24,7 @@
                         <Font name="Comic Sans MS" size="17.0" />
                     </font>
                 </TextField>
-                <Label fx:id="msg_label" alignment="CENTER" layoutX="7.0" layoutY="257.0" prefHeight="17.0" prefWidth="285.0" text="Неверный логин или пароль. Повторите попытку" visible="false" />
+                <Label fx:id="msgLabel" alignment="CENTER" layoutX="7.0" layoutY="257.0" prefHeight="17.0" prefWidth="285.0" text="Неверный логин или пароль. Повторите попытку" visible="false" />
                 <Hyperlink fx:id="forgotPasswordButton" alignment="TOP_CENTER" layoutX="158.0" layoutY="365.0" text="Забыли пароль?" underline="true" visited="true">
                     <font>
                         <Font size="13.0" />
@@ -44,7 +44,10 @@
                         <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/key.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="singInButton" layoutX="122.0" layoutY="334.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #EB6E63;" stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css" text="Войти">
+                <Button fx:id="singInButton" layoutX="122.0" layoutY="334.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0"
+                        onAction="#sendRequestToSignIn" style="-fx-background-color: #EB6E63;"
+                        stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css"
+                        text="Войти">
                     <font>
                         <Font name="Consolas Italic" size="16.0" />
                     </font>
@@ -78,7 +81,11 @@
                <font>
                   <Font size="15.0" />
                </font></Label>
-                <Button fx:id="singUpButton" layoutX="22.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #F77368;" stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css" text="Регистрация">
+                <Button fx:id="singUpButton" layoutX="22.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0"
+                        onAction="#redirectToSignUpScene"
+                        prefWidth="144.0" style="-fx-background-color: #F77368;"
+                        stylesheets="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/animation/first.css"
+                        text="Регистрация">
                     <font>
                         <Font name="Consolas Italic" size="16.0" />
                     </font>

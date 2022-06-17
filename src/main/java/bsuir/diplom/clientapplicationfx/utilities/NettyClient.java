@@ -18,13 +18,12 @@ import java.util.concurrent.TimeUnit;
 @Log4j2
 @Component
 @RequiredArgsConstructor
-public class NettyClient{
+public class NettyClient {
 
     private final Bootstrap bootstrap;
     public static String uid = null;
     public static String token = null;
     public static String sessionId = null;
-    //private SocketChannel socketChannel;
 
     @PostConstruct
     public void start() {
