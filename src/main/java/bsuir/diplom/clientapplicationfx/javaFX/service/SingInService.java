@@ -5,8 +5,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class SingInService {
 
-    public String getHelloMessage() {
-        return "Poshel nahui";
-    }
-
 }

@@ -30,10 +30,9 @@
                         <Font size="13.0" />
                     </font>
                 </Hyperlink>
-                <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="31.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/multiple-users-silhouette.png" />
-                    </image>
+                <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="31.0" layoutY="194.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <Image url="@../../../../../../SourceFIles/auto-production-automation-system-master/AppClient/src/main/resources/assets/icons/multiple-users-silhouette.png"/>
                 </ImageView>
                 <ImageView fx:id="lock_icon" fitHeight="51.0" fitWidth="63.0" layoutX="185.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
                     <image>
